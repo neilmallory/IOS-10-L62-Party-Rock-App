@@ -113,8 +113,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="videoPreviewImage" destination="5rl-EJ-ucY" id="NYW-mN-Kbs"/>
-                                            <outlet property="videoTitleLabel" destination="YFF-Er-TL4" id="GpP-ov-HKH"/>
-                                            <outlet property="videoTitleLable" destination="YFF-Er-TL4" id="7W4-PY-IbK"/>
+                                            <outlet property="videoTitleLabel" destination="YFF-Er-TL4" id="jmS-N6-adO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
