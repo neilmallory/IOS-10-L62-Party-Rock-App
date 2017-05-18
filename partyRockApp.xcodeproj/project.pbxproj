@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		3E7570BC1ECDC7860065390C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7570BB1ECDC7860065390C /* AppDelegate.swift */; };
-		3E7570BE1ECDC7860065390C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7570BD1ECDC7860065390C /* ViewController.swift */; };
+		3E7570BE1ECDC7860065390C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7570BD1ECDC7860065390C /* MainViewController.swift */; };
 		3E7570C11ECDC7860065390C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7570BF1ECDC7860065390C /* Main.storyboard */; };
 		3E7570C31ECDC7860065390C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7570C21ECDC7860065390C /* Assets.xcassets */; };
 		3E7570C61ECDC7860065390C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7570C41ECDC7860065390C /* LaunchScreen.storyboard */; };
+		3E7570D31ECDE0AE0065390C /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E7570D21ECDE0AE0065390C /* still time.ttf */; };
+		3E7570D61ECDE2B70065390C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7570D51ECDE2B70065390C /* VideoViewController.swift */; };
+		3E7570D81ECDE5460065390C /* PartyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7570D71ECDE5460065390C /* PartyTableViewCell.swift */; };
+		3E7570DA1ECDE9D00065390C /* partyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7570D91ECDE9D00065390C /* partyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E7570B81ECDC7860065390C /* partyRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = partyRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7570BB1ECDC7860065390C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E7570BD1ECDC7860065390C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E7570BD1ECDC7860065390C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3E7570C01ECDC7860065390C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E7570C21ECDC7860065390C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E7570C51ECDC7860065390C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E7570C71ECDC7860065390C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7570D21ECDE0AE0065390C /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		3E7570D51ECDE2B70065390C /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		3E7570D71ECDE5460065390C /* PartyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyTableViewCell.swift; sourceTree = "<group>"; };
+		3E7570D91ECDE9D00065390C /* partyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = partyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		3E7570BA1ECDC7860065390C /* partyRockApp */ = {
 			isa = PBXGroup;
 			children = (
+				3E7570D41ECDE0B60065390C /* Files */,
+				3E7570CD1ECDC8920065390C /* Model */,
+				3E7570CE1ECDC89F0065390C /* View */,
+				3E7570D11ECDC96A0065390C /* Controller */,
 				3E7570BB1ECDC7860065390C /* AppDelegate.swift */,
-				3E7570BD1ECDC7860065390C /* ViewController.swift */,
 				3E7570BF1ECDC7860065390C /* Main.storyboard */,
-				3E7570C21ECDC7860065390C /* Assets.xcassets */,
 				3E7570C41ECDC7860065390C /* LaunchScreen.storyboard */,
+				3E7570C21ECDC7860065390C /* Assets.xcassets */,
 				3E7570C71ECDC7860065390C /* Info.plist */,
 			);
 			path = partyRockApp;
+			sourceTree = "<group>";
+		};
+		3E7570CD1ECDC8920065390C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E7570D91ECDE9D00065390C /* partyRock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3E7570CE1ECDC89F0065390C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E7570D71ECDE5460065390C /* PartyTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3E7570D11ECDC96A0065390C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E7570BD1ECDC7860065390C /* MainViewController.swift */,
+				3E7570D51ECDE2B70065390C /* VideoViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3E7570D41ECDE0B60065390C /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E7570D21ECDE0AE0065390C /* still time.ttf */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E7570C61ECDC7860065390C /* LaunchScreen.storyboard in Resources */,
+				3E7570D31ECDE0AE0065390C /* still time.ttf in Resources */,
 				3E7570C31ECDC7860065390C /* Assets.xcassets in Resources */,
 				3E7570C11ECDC7860065390C /* Main.storyboard in Resources */,
 			);
@@ -136,8 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E7570BE1ECDC7860065390C /* ViewController.swift in Sources */,
+				3E7570BE1ECDC7860065390C /* MainViewController.swift in Sources */,
+				3E7570DA1ECDE9D00065390C /* partyRock.swift in Sources */,
 				3E7570BC1ECDC7860065390C /* AppDelegate.swift in Sources */,
+				3E7570D81ECDE5460065390C /* PartyTableViewCell.swift in Sources */,
+				3E7570D61ECDE2B70065390C /* VideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
